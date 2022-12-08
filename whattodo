@@ -1,0 +1,27 @@
+UPDATED ON 12.6.2022
+
+WHAT TO DO :
+
+[Understand and configure Sway]
+Partition SSD:
+{
+IBM SSD (WDC)
+|
+---nvme0n1
+    |
+    ---nvme0n1p1 BOOT, 512MiB, ESP
+    ---nvme0n1p2 Arch Linux, 127.5GiB, BTRFS
+    ---nvme0n1p3 Gentoo Linux, 119GiB, ext4
+    ---nvme0n1p4 Swap, 8GiB, swapfs
+    |
+    ---sda
+         |
+         ---sda1, Ventoy, 64GiB, exFAT
+         ---sda2, VTOYEFI, 15MiB, ESP
+}
+Install/Compile Gentoo Stage 3, AMD64, OpenRC to /dev/nvme0n1p4
+Learn to recover Gentoo
+Apply grub theme
+Set up distrobox on Gentoo
+Rice Gentoo + cool gentoo neofetch logo!
+Make new list
